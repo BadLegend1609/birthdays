@@ -1,0 +1,14 @@
+<!-- @format -->
+
+<%- include('header') %> <%- include('navbar') %> <% birthday.forEach((b) => {
+%>
+
+<div class="note">
+	<h1><%=b.name %></h1>
+	<p>
+		<%= b.birthday.getDate() %> / <%= b.birthday.getMonth() + 1 %> / <%=
+		b.birthday.getFullYear() %>
+	</p>
+</div>
+
+<% }); %> <%- include('footer') %>
